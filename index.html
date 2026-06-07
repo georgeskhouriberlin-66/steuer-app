@@ -2,55 +2,93 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Steuer-App</title>
+    <title>Steuer-App 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Custom-Font Sandbox (Platzhalter, falls du später eine echte Datei einbindest) -->
     <style>
-        @font-face {
-            font-family: "Sandbox";
-            src: local("Sandbox"), local("Sandbox-Regular");
-        }
-
         body {
-            font-family: "Sandbox", "Segoe UI", Arial, sans-serif;
-            background: #f5f5f5;
-            padding: 40px;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 0;
             text-align: center;
         }
 
-        .logo img {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
+        header {
+            background: #1a73e8;
+            color: white;
+            padding: 40px 20px;
         }
 
-        .box {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            max-width: 400px;
-            margin: auto;
-            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
         }
 
         h1 {
-            margin-top: 0;
+            margin-top: 20px;
+            font-size: 32px;
+        }
+
+        .content {
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #e9eef5;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
         }
     </style>
-
-    <link rel="icon" type="image/png" href="assets/Steuer-App-Icon-CP.png">
 </head>
 
 <body>
 
-    <div class="logo">
-        <img src="assets/Steuer-App-Icon-CP.png" alt="Steuer-App Logo">
-    </div>
+<header>
+    <img src="assets/Steuer-App-Icon-CP.png" alt="Steuer-App Logo">
+    <h1>Steuer-App 2026</h1>
+    <p>Modulare, automatisierte Steuerdatenverarbeitung für private und gewerbliche Nutzer.</p>
+</header>
 
-    <div class="box">
-        <h1>Steuer-App 2026</h1>
-        <p>Willkommen! Diese Seite ist der Startpunkt für die Steuer-App.</p>
-    </div>
+<div class="content">
+    <h2>Über das Projekt</h2>
+    <p>
+        Die Steuer-App 2026 ist ein modular aufgebautes System zur strukturierten Erfassung,
+        Validierung und Übermittlung steuerrelevanter Daten. Ziel ist es, Nutzern eine
+        einfache, transparente und nachvollziehbare Möglichkeit zu bieten, ihre Steuerdaten
+        digital aufzubereiten.
+    </p>
+
+    <h2>Technische Basis</h2>
+    <ul>
+        <li>Modulare Architektur (Werbungskosten, Sonderausgaben, EÜR, Vermietung, Kapital)</li>
+        <li>Validierung nach offiziellen ELSTER‑Spezifikationen</li>
+        <li>Geplant: Anbindung an ERiC‑Schnittstelle</li>
+        <li>Open‑Source‑Struktur für transparente Weiterentwicklung</li>
+    </ul>
+
+    <h2>Rechtliches</h2>
+    <p>
+        <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
+</div>
+
+<footer>
+    © 2026 Steuer-App Projekt – Berlin
+</footer>
 
 </body>
 </html>
