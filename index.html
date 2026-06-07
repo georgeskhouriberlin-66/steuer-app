@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Steuer-App</title>
+
+    <!-- Beispiel: Custom-Font "Sandbox" -->
     <style>
+        @font-face {
+            font-family: "Sandbox";
+            src: local("Sandbox"), local("Sandbox-Regular");
+            /* Wenn du später eine echte Font-Datei hast:
+               src: url("assets/sandbox.ttf") format("truetype");
+            */
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Sandbox", "Segoe UI", Arial, sans-serif;
             background: #f5f5f5;
             padding: 40px;
             text-align: center;
         }
+
+        .logo img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+        }
+
         .box {
             background: white;
             padding: 30px;
@@ -18,16 +35,23 @@
             margin: auto;
             box-shadow: 0 0 12px rgba(0,0,0,0.1);
         }
+
         h1 {
             margin-top: 0;
         }
     </style>
+
+    <link rel="icon" type="image/png" href="assets/icon.png">
 </head>
+
 <body>
+    <div class="logo">
+        <img src="assets/icon.png" alt="Steuer-App Logo">
+    </div>
+
     <div class="box">
-        <h1>Steuer-App</h1>
-        <p>Willkommen! Diese Seite ist der Startpunkt für meine Steuer-App.</p>
+        <h1>Steuer-App 2026</h1>
+        <p>Willkommen! Diese Seite ist der Startpunkt für die Steuer-App.</p>
     </div>
 </body>
 </html>
-
